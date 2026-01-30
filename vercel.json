@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/projects/tong-tong/:path*",
+      "destination": "https://norsuzanna.dev/:path*"
+    }
+  ]
+}
