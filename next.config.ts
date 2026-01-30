@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/projects/tong-tong',
-  assetPrefix: '/projects/tong-tong',
+  // No basePath
+  assetPrefix: 'https://tong-tong-flame.vercel.app',
   output: 'export',
   images: {
     unoptimized: true,
