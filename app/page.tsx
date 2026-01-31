@@ -410,7 +410,7 @@ export default function SplitBillPage() {
       <div className="relative max-w-7xl mx-auto px-4 py-12">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
-          <div className="flex justify-end mb-4">
+          <div className="flex justify-end">
             <button
               onClick={() => setLanguage(language === 'ms' ? 'en' : 'ms')}
               className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-white/80 backdrop-blur-sm rounded-xl shadow-md hover:shadow-lg transition-all border border-orange-200"
