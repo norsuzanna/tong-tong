@@ -407,10 +407,10 @@ export default function SplitBillPage() {
         <div className="absolute bottom-20 left-40 w-64 h-64 bg-amber-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 py-12">
+      <div className="relative max-w-7xl mx-auto px-4 py-4">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
-          <div className="flex justify-end">
+          <div className="flex justify-end mb-4">
             <button
               onClick={() => setLanguage(language === 'ms' ? 'en' : 'ms')}
               className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-white/80 backdrop-blur-sm rounded-xl shadow-md hover:shadow-lg transition-all border border-orange-200"
