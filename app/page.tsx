@@ -416,7 +416,7 @@ export default function SplitBillPage() {
               className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-white/80 backdrop-blur-sm rounded-xl shadow-md hover:shadow-lg transition-all border border-orange-200"
             >
               <Languages size={18} className="text-orange-500 sm:w-5 sm:h-5" />
-              <span className="font-semibold text-sm sm:text-base text-gray-700">{language === 'ms' ? 'English' : 'Bahasa Malaysia'}</span>
+              <span className="font-semibold text-sm sm:text-base text-gray-700">{language === 'ms' ? 'EN' : 'BM'}</span>
             </button>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-600 bg-clip-text bg-gradient-to-r from-orange-600 to-red-600" style={{ fontFamily: "'Playfair Display', serif" }}>
@@ -639,7 +639,7 @@ export default function SplitBillPage() {
                 <div className="flex items-center gap-2 ml-7 sm:ml-0">
                   <input
                     type="number"
-                    step="0.1"
+                    step="0.01"
                     min="0"
                     max="100"
                     value={taxConfig.serviceCharge.percentage}
