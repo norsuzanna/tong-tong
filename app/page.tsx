@@ -881,7 +881,7 @@ export default function SplitBillPage() {
             <div className="space-y-2 text-sm sm:text-base md:text-lg">
               <div className="flex justify-between">
                 <span>{t.subtotal}</span>
-                <span>RM {totals.subtotal.toFixed(2)}</span>
+                <span>RM {Number(totals.subtotal).toFixed(2)}</span>
               </div>
               {totals.serviceCharge > 0 && (
                 <div className="flex justify-between">
