@@ -588,10 +588,13 @@ export default function SplitBillPage() {
                       type="number"
                       step="0.01"
                       value={item.price || ''}
-                      onChange={(e) => updateSharedItem(item.id, 'price', e.target.value)}
+                      onChange={(e) => {
+                        const value = e.target.value;
+                        updateSharedItem(item.id, 'price', value === '' ? '' : value);
+                      }}
                       onBlur={(e) => {
                         const parsed = parseFloat(e.target.value);
-                        updateSharedItem(item.id, 'price', isNaN(parsed) ? 0 : parsed);
+                        updateSharedItem(item.id, 'price', isNaN(parsed) || e.target.value === '' ? 0 : parsed);
                       }}
                       placeholder="0.00"
                       className="w-full sm:w-28 md:w-32 pl-8 sm:pl-10 pr-3 sm:pr-4 py-2 text-sm sm:text-base rounded-xl border-2 border-orange-200 focus:border-orange-400 focus:outline-none transition-colors"
