@@ -588,7 +588,7 @@ export default function SplitBillPage() {
                       type="number"
                       step="0.01"
                       value={item.price || ''}
-                      onChange={(e) => updateSharedItem(item.id, 'price', parseFloat(e.target.value) || 0)}
+                      onChange={(e) => updateSharedItem(item.id, 'price', e.target.value)}
                       onBlur={(e) => {
                         const parsed = parseFloat(e.target.value);
                         updateSharedItem(item.id, 'price', isNaN(parsed) ? 0 : parsed);
